@@ -2,6 +2,7 @@ import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Services from './components/Services'
 import CTA from './components/CTA'
+import RocketScroller from './components/RocketScroller'
 
 function App() {
   return (
@@ -10,6 +11,9 @@ function App() {
       <div className="pointer-events-none fixed inset-0">
         <div className="absolute -top-40 left-1/2 -translate-x-1/2 h-96 w-[45rem] bg-gradient-to-tr from-blue-500/25 via-fuchsia-500/25 to-amber-400/25 blur-3xl rounded-full" />
       </div>
+
+      {/* Global rocket animation overlay */}
+      <RocketScroller />
 
       <Navbar />
       <Hero />
